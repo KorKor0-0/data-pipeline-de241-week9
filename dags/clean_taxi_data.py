@@ -75,7 +75,7 @@ def clean_taxi_data(**context):
     logger.info(f"Final rows after cleaning: {final_count}")
     logger.info(f"Retention rate: {final_count/original_count:.2%}")
 
-    output_path = "/tmp/nyc_taxi_clean.csv"
+    output_path = "/tmp/nyc_taxi_cleaned.csv"
     df.to_csv(output_path, index=False)
 
     logger.info(f"Saved cleaned data to: {output_path}")
